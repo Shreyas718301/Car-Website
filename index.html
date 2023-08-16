@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>AUTO GARAGE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header-area">
+    <div class="navbar-area">
+      <nav class="site-navbar">
+        <a href="#home" class="site-logo">AUTO GARAGE</a>
+
+        <div class="linsk flex">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#service">service</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+
+          <div class="account">
+           
+            <span>Call : +91 12345 67982</span>
+          </div>
+
+
+          <div class="nav-toggler">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const navToggler = document.querySelector('.nav-toggler');
+    const navMenu = document.querySelector('.site-navbar ul');
+    const navLinks = document.querySelectorAll('.site-navbar a');
+
+    allEventListners();
+
+    function allEventListners() {
+      navToggler.addEventListener('click', togglerClick);
+      navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
+    }
+
+    function togglerClick() {
+      navToggler.classList.toggle('toggler-open');
+      navMenu.classList.toggle('open');
+    }
+  </script>
+
+
+
+  <section class="home top">
+    <div class="container">
+      <div class="circle"> </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item flex">
+          <div class="left mtop">
+            <h1>Car Maintenance</h1>
+            <p>Book the best car service mechanics and repair experts near you. A one-stop-service shop for all your car maintenance needs.
+            </p>
+            <div class="button">
+              <button class="btn1">Read More</button>
+              <button class="btn2">Contact Us</button>
+            </div>
+          </div>
+          <div class="right mtop">
+            <img src="image/home.png" alt="">
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="left mtop">
+            <h1>Car mechanic</h1>
+            <p>Looking for a car mechanic near you? With free pickup and drop for all forms of car repair, we’ve got you covered.
+            </p>
+            <div class="button">
+              <button class="btn1">Read More</button>
+              <button class="btn2">Contact Us</button>
+            </div>
+          </div>
+          <div class="right mtop">
+            <img src="image/home.png" alt="">
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="left mtop">
+            <h1>Car painting</h1>
+            <p>Get car denting and body painting services near you in Bangalore, Mumbai, Delhi and Noida at the best paint shops and garages.
+            </p>
+            <div class="button">
+              <button class="btn1">Read More</button>
+              <button class="btn2">Contact Us</button>
+            </div>
+          </div>
+          <div class="right mtop">
+            <img src="image/home.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="services" id="service">
+    <div class="container">
+      <h2>Our Services</h2>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <img src="image/s1.png" alt="">
+          <h3>General Maintenance</h3>
+          <p>All vehicles, Your car’s journey has a fair share of ups and downs before its entire lifespan is exhausted.</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s2.png" alt="">
+          <h3>General Mechanic</h3>
+          <p>All vehicles, whether new or used, require routine maintenance to keep them in driving condition. </p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s3.png" alt="">
+          <h3>General Tyre Maintenance</h3>
+          <p>We are committed to providing top-quality auto repairs and services. If you want the best deal on tyres.</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s4.png" alt="">
+          <h3>General Alloy Wheel</h3>
+          <p>Alloy wheel refurbishment is the process of repairing alloy wheels in order to give them a new lease of life</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s5.png" alt="">
+          <h3>General Detailing</h3>
+          <p>We specialise in the latest car care services and technology. Top-quality and comprehensive car detailing services.</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/s6.png" alt="">
+          <h3>General Painting</h3>
+          <p>Get car denting and body painting services near you in Bangalore, Mumbai, Delhi and Noida at the best paint shops and garages</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about" id="about">
+    <div class="container flex">
+      <div class="circle"></div>
+      <div class="left top">
+        <img src="image/a.png" alt="">
+      </div>
+      <div class="right top">
+        <h1>About Us </h1>
+        <p>Auto Garage’s mission is to enable premium quality care for your luxury car service at affordable pricing . We ensure real time updates for complete car care needs with a fair and transparent pricing mechanism. Skilled technicians, working at our state of the art German technology workshop further ensure that only genuine OEM parts are used for your car care needs. </p>
+        <button class="btn2">Read More</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services choose top">
+    <div class="container">
+      <h1>Why Choose Us</h1>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <img src="image/w1.png" alt="">
+          <h3>Best Workers </h3>
+          <p>Toyota Trained & Certified Technicians</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/w2.png" alt="">
+          <h3>Best Materials </h3>
+          <p>Only Toyota & OEM Genuine Parts are used</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+          <img src="image/w3.png" alt="">
+          <h3>Best Service </h3>
+          <p>Industry Best Service Standards.</p>
+          <a href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="customer top">
+    <div class="container">
+      <h1>Testimonial </h1>
+      <p>What Our Customers Have To Say </p>
+
+      <div class="owl-carousel owl-theme mtop content">
+        <div class="item flex">
+          <div class="image">
+            <div class="img">
+              <img src="image/c1.jpg" alt="">
+            </div>
+          </div>
+          <div class="text">
+            <div class="heading flex1">
+              <div class="para">
+                <h3>ROHAN YADAV</h3>
+                <h5>CUSTOMER</h5>
+              </div>
+              <div class="para">
+                <i class="fas fa-quote-left"></i>
+              </div>
+            </div>
+            <p>Fast, fair and affordable. I took my car in for rear struts, and they were much cheaper than when I’d had the front ones done a few months. I thought I had a fueling problem, and when they took a look and found nothing wrong (it was my mistake), they insisted that I didn’t have to pay the evaluation charge.</p>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="image">
+            <div class="img">
+              <img src="image/c2.jpg" alt="">
+            </div>
+          </div>
+          <div class="text">
+            <div class="heading flex1">
+              <div class="para">
+                <h3>PANAKJ TRIPATI</h3>
+                <h5>CUSTOMER</h5>
+              </div>
+              <div class="para">
+                <i class="fas fa-quote-left"></i>
+              </div>
+            </div>
+            <p>I googled an auto repair near me and chose the place for its good reviews. I am glad I chose them, quick friendly service. Upfront immediately about the price of the work done on my car and detailed why. I will recommend this shop to all my family in the area.</p>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="image">
+            <div class="img">
+              <img src="image/c3.jpg" alt="">
+            </div>
+          </div>
+          <div class="text">
+            <div class="heading flex1">
+              <div class="para">
+                <h3>GLADWIN JASON</h3>
+                <h5>CUSTOMER</h5>
+              </div>
+              <div class="para">
+                <i class="fas fa-quote-left"></i>
+              </div>
+            </div>
+            <p> Really great auto service center these guys had me in and out, most places I’ve been to take at least an hour before they tell you that your car is being worked on. Really neat and clean space I would definitely recommend to anyone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-chevron-left'></i>", "<i class='far fa-chevron-right'></i>"],
+      responsive: {
+        512: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="contact top">
+    <div class="container flex">
+      <div class="circle"> </div>
+      <div class="left">
+        <h1>Get In Touch</h1>
+
+        <form>
+          <input type="text" placeholder="Your Name">
+          <input type="text" placeholder="Your Email">
+          <input type="text" placeholder="Your Phone">
+          <textarea rows="5" cols="80">Message</textarea>
+          <button class="btn2">SEND</button>
+        </form>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="image/contact.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container top" id="contact">
+      <div class="content grid">
+        <div class="box flex">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Pune, Maharastra</span>
+        </div>
+        <div class="box flex">
+          <i class="fa fa-phone-alt"></i>
+          <span>+91 12345 67982</span>
+        </div>
+        <div class="box flex">
+          <i class="fa fa-envelope"></i>
+          <span>autogarage@gmail.com</span>
+        </div>
+        <div class="box flex">
+          <input type="text" placeholder="Your Email address">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+
+      <div class="soical mtop">
+        <div class="logo">
+          <h1>AUTO GARAGE</h1>
+        </div>
+        <ul>
+          <li> <i class="fab fa-facebook-f"></i></li>
+          <li> <i class="fab fa-instagram"></i></li>
+          <li> <i class="fab fa-twitter"></i></li>
+          <li> <i class="fab fa-youtube"></i></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p>Copyright (c) 2021 Copyright Holder All Rights Reserved.</p>
+  </div>
+</body>
+
+</html>
